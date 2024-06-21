@@ -1,8 +1,9 @@
 import logo from "../../assets/images/logo.jpg";
+import Button from "../UI/Button";
 import { useCartFacade } from "../stores/useCartFacade";
 
 export default function Header({handleOpenCart}) {
-  const { cart } = useCartFacade();
+  const { totalUnits } = useCartFacade();
 
   return (
     <header id="main-header">
@@ -11,7 +12,7 @@ export default function Header({handleOpenCart}) {
         <h1>REACTFOOD</h1>
       </div>
       <nav>
-        <button className="text-button" onClick={handleOpenCart} disabled={ cart.length > 0 ? false : true}>Cart({cart && cart.length})</button>
+        <Button textOnly onClick={handleOpenCart} disabled={ totalUnits > 0 ? false : true}>Cart({totalUnits})</Button>
       </nav>
     </header>
   );

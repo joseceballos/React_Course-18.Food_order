@@ -1,9 +1,9 @@
 import Header from "./components/header/Header";
-import Container from "./components/containers/Container";
+import Container from "./components/UI/Container";
 import Meals from "./components/meals/Meals";
 import Cart from "./components/cart/Cart.jsx";
 import { useState } from "react";
-import Modal from "./components/containers/Modal.jsx";
+import Modal from "./components/UI/Modal.jsx";
 import Checkout from "./components/checkout/Checkout.jsx";
 import { postOrder } from "./assets/js/utils/http.js";
 import { useCartFacade } from "./components/stores/useCartFacade.js";

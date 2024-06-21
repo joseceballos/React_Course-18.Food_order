@@ -1,7 +1,7 @@
 import { useCartStore } from "./cartStore";
 import { shallow } from "zustand/shallow";
 import { useMealsFacade } from "./useMealsFacade";
-import { getMealsInfo, getTotalPrice, getTotalUnits } from "../../assets/js/utils/util";
+import { getMealsInfo, getTotalPrice, getTotalUnits } from "../../assets/js/utils/cartUtils";
 
 function useCartDerived(cart) {
   const cartWithDetails = getMealsInfo(cart, useMealsFacade().meals);

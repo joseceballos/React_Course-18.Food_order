@@ -3,7 +3,7 @@ import {
   isEmail,
   isNotEmpty,
 } from "../../assets/js/utils/validation";
-import Input from "../containers/Input";
+import Input from "../UI/Input";
 import { useInput } from "../hooks/useInput";
 import { useCartFacade } from "../stores/useCartFacade";
 
